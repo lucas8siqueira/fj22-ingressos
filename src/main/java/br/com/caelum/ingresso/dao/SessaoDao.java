@@ -23,6 +23,8 @@ public class SessaoDao {
 	public List<Sessao>buscaSessoesDaSala(Sala sala){
 		return manager.createQuery("select s from Sessao s where s.sala = :sala", Sessao.class).setParameter("sala", sala).getResultList();
 	}
+	
+	
 	}
 	
 	
